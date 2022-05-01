@@ -20,3 +20,40 @@
   line-height: 18px;
   color: rgba(68, 68, 68, 1);
 }
+
+@media (max-width: $mobile-width-only) {
+  .faq__wrapper {
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  .faq__title {
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  .faq__item {
+    display: flex;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .faq__wrapper {
+    margin: 0 auto;
+    padding: 27px 109px 0 30px;
+  }
+
+  .faq__items-list {
+    display: grid;
+    grid-template-columns: 249px 249px;
+    row-gap: 37px;
+    column-gap: 153px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .faq__items-list {
+    display: flex;
+  }
+}
+

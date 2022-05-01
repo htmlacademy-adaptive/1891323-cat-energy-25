@@ -1,17 +1,23 @@
-.promo__background {
-  width: 320px;
-  height: 302px;
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
-.promo-title {
+.promo__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  margin: 0;
 }
 
-.promo-description {
+.promo__description {
   font-size: 14px;
   line-height: 14px;
+  margin: 0;
+}
+
+.promo__main {
+  display: flex;
 }
 
 .promo__main-can {
@@ -19,7 +25,88 @@
   height: 270px;
 }
 
-.promo__main-button {
+.promo__footer {
+  display: flex;
+}
+
+.promo__main-btn {
   font-size: 14px;
   line-height: 18px;
+  width: 280px;
+  height: 40px;
+  background-color: $green;
+  color: $white;
+}
+
+@media (max-width: $mobile-width-only) {
+  .promo {
+    margin-top: 44px;
+  }
+
+  .promo__header {
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 0 35px;
+  }
+
+  .promo__title {
+    text-align: center;
+  }
+
+  .promo__description {
+    margin-top: 25px;
+    text-align: center;
+  }
+
+  .promo__main-can {
+    display: flex;
+    margin: auto;
+    padding: 29px 20px 0;
+  }
+
+  .promo__main-btn {
+    margin: auto;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo__wrapper {
+    max-width: 418px;
+    margin-left: 117px;
+    margin-top: 64px;
+  }
+
+  .promo__title {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  .promo__description {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 25px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__wrapper {
+    max-width: 418px;
+    margin-left: 190px;
+  }
+
+  .promo__title {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  .promo__description {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 40px;
+    text-align: left;
+  }
 }
