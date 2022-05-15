@@ -2,52 +2,45 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body class="page__body">
     <header class="main-header">
-
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-mav--nojs">
         <div class="main-nav__wrapper">
           <!-- logo mobile -->
           <a class="main-nav__logo-first" href="index.html">
-            <img src="img/logo-mobile.svg" alt="Логотип Кэт энерджи"/>
+            <img src="img/logo-mobile.svg" alt="Логотип Кэт энерджи" />
           </a>
           <!-- logo tablet -->
           <a class="main-nav__logo-second" href="index.html">
-            <img src="img/logo-tablet.svg" alt="Логотип Кэт энерджи"/>
+            <img src="img/logo-tablet.svg" alt="Логотип Кэт энерджи" />
           </a>
           <!-- logo desktop -->
           <a class="main-nav__logo-third" href="index.html">
-            <img src="img/logo-desktop.svg" alt="Логотип Кэт энерджи"/>
+            <img src="img/logo-desktop.svg" alt="Логотип Кэт энерджи" />
           </a>
 
           <a class="main-nav__logo-name" href="index.html">
-            <img src="img/logo-name.svg" alt="Имя компании">
+            <img src="img/logo-name.svg" alt="Имя компании" />
           </a>
-          <button class="main-nav__toggle-btn" type="button">
+          <!-- menu button -->
+          <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
 
-
           <ul class="reset-list main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a class="reset-list site-list__link">
-                Главная
-              </a>
+              <a class="reset-list"> Главная </a>
             </li>
             <li class="site-list__item">
-              <a class="reset-list site-list__link" href="catalog.html">
-                Каталог продукции
-              </a>
+              <a class="reset-list" href="catalog.html"> Каталог продукции </a>
             </li>
             <li class="site-list__item">
-              <a class="reset-list site-list__link" href="form.html">
-                Подбор программы
-              </a>
+              <a class="reset-list" href="form.html"> Подбор программы </a>
             </li>
           </ul>
         </div>
@@ -55,7 +48,6 @@
     </header>
 
     <main class="main-container">
-
       <section class="promo">
         <div class="promo__wrapper">
           <div class="promo__header">
@@ -65,11 +57,12 @@
           <div class="promo__main">
             <img
               class="promo__main-can"
-              src="img/main-can.png" alt="Банка с кормом"
+              src="img/index-can-tablet 1.svg"
+              alt="Банка с кормом"
             />
           </div>
           <div class="promo__footer">
-            <button class="btn promo__main-btn">
+            <button class="btn main-btn">
               <span>ПОДОБРАТЬ ПРОГРАММУ</span>
             </button>
           </div>
@@ -78,54 +71,49 @@
 
       <section class="benefits">
         <div class="benefits__wrapper">
-
           <!-- Benefits element__first -->
           <div class="benefits__card">
-            <div class="benefits__header">
-              <img
-                src="img/cat_back-icon.svg"
-                alt="Иконка приимуществ с котом"
-              />
-              <h3 class="benefits__title">ПОХУДЕНИЕ</h3>
-            </div>
+            <img
+              class="benefits__icon"
+              src="img/cat_back-icon.svg"
+              alt="Иконка приимуществ с котом"
+            />
+            <h3 class="benefits__title">ПОХУДЕНИЕ</h3>
 
-              <div class="benefits__main">
-                <p class="benefits__description">
-                  Ваш кот весит больше собаки и почти утратил способность лазить
-                  по деревьям? Пора на диету! Cat Energy Slim поможет вашему
-                  питомцу сбросить лишний вес.
-                </p>
-              </div>
-              <div class="benefits__footer">
-                <a class="benefits__catalog-link" href="catalog.html">
-                  КАТАЛОГ PRO
-                  <img src="img/icon_arrow-right.svg" alt="Стрелка" />
-                </a>
-              </div>
+            <p class="benefits__description">
+              Ваш кот весит больше собаки и почти утратил способность лазить по
+              деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу
+              сбросить лишний вес.
+            </p>
+            <a class="benefits__catalog-link" href="catalog.html">
+              КАТАЛОГ SLIM
+              <img
+                class="benefits__arrow"
+                src="img/icon_arrow-right.svg"
+                alt="Стрелка"
+              />
+            </a>
           </div>
 
           <!-- Benefits element__second -->
           <div class="benefits__card">
-            <div class="benefits__header">
-              <img
-                src="img/cat_back_second.svg"
-                alt="Иконка приимуществ с котом"
-              />
-              <h3 class="benefits__title">НАБОР МАССЫ</h3>
-            </div>
+            <img
+              class="benefits__icon"
+              src="img/cat_back_second.svg"
+              alt="Иконка приимуществ с котом"
+            />
+            <h3 class="benefits__title">НАБОР МАССЫ</h3>
 
-              <div class="benefits__main">
-                <p class="benefits__description">
-                  Заработать авторитет среди дворовых котов и даже собак?
-                  Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
-                </p>
-              </div>
-              <div class="benefits__footer">
-                <a class="benefits__catalog-link" href="catalog.html">
-                  КАТАЛОГ PRO
-                  <img src="img/icon_arrow-right.svg" alt="Стрелка" />
-                </a>
-              </div>
+            <p class="benefits__description">
+              Заработать авторитет среди дворовых котов и даже собак? Серия Cat
+              Energy Pro поможет вашему коту нарастить необходимые мышцы!
+            </p>
+            <a class="benefits__catalog-link" href="catalog.html">
+              КАТАЛОГ PRO
+              <img class="benefits__arrow"
+              src="img/icon_arrow-right.svg"
+              alt="Стрелка" />
+            </a>
           </div>
         </div>
       </section>
@@ -170,52 +158,59 @@
       <section class="example">
         <div class="example__wrapper">
           <div class="example__header">
-            <h2 class="example__title">Живой пример</h2>
-            <p class="example__description">
-              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
-              Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
-              этом он не менял своих привычек и по-прежнему спит по 16 часов в
-              день.
-            </p>
-          </div>
+            <h2 class="example__title">
+              Живой пример
+            </h2>
+              <p class="example__description">
+                Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
+                на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
+                При этом он не менял своих привычек и<br> по-прежнему спит по 16 часов
+                в день.
+              </p>
+            </div>
 
-          <div class="example__main">
+            <div class="example__main">
               <!--Example frame-element__first-->
-              <div class="example__results">
+              <div class="example__results example__results-first">
                 <img src="img/weight_back-frame.svg" alt="Рамка" />
 
                 <div class="example-frame">
                   <h3 class="example-frame__title">5 КГ</h3>
                   <p class="example-frame__description">снижение веса</p>
                 </div>
-            </div>
+              </div>
 
               <!--Example frame-element__second-->
-              <div class="example__results">
+              <div class="example__results example__results-second">
                 <img src="img/weight_back-frame.svg" alt="Рамка" />
 
                 <div class="example-frame">
                   <h3 class="example-frame__title">60 ДНЕЙ</h3>
                   <p class="example-frame__description">затрачено времени</p>
                 </div>
+              </div>
+
+              <div class="example__results-price">
+                <p>Затраты на питание:</p>
+                <p>15 000 РУБ.</p>
+              </div>
             </div>
 
-            <p class="example__results-price">Затраты на питание: 15 000 РУБ.</p>
-          </div>
-
-          <div class="example__footer">
-            <div class="example__slider">
-              <img class="slider__image slider-image__first"
-                src="img/slider-before.png"
-                alt="Иллюстрация трасформации кота"
-              />
-              <img class="slider__image slider-image__second"
-                class="visually-hidden"
-                src="img/slider-after.png"
-                alt="Иллюстрация трасформации кота"
-              />
-            </div>
-              БЫЛО СТАЛО
+            <div class="example__footer">
+              <div class="example__slider">
+                <img
+                  class="slider__image slider-image__first"
+                  src="img/slider-before.png"
+                  alt="Иллюстрация трасформации кота"
+                />
+                <img
+                  class="slider__image slider-image__second"
+                  class="visually-hidden"
+                  src="img/slider-after.png"
+                  alt="Иллюстрация трасформации кота"
+                />
+                БЫЛО СТАЛО
+              </div>
           </div>
         </div>
       </section>
@@ -228,24 +223,28 @@
             <h3 class="contacts__title">
               ПРИШЛАШАЕМ К СОТРУДНИЧЕСТВУ ДИЛЕРОВ!
             </h3>
-
             <p class="contacts__address">
-              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+              ул. Большая Конюшенная, д. 19/8
+              <br>
+              <br>
+               Санкт-Петербург
             </p>
           </div>
         </section>
 
         <div class="location">
           <a class="location__wrapper" href="#">
-            <img src="img/location.jpg" alt="Локация на карте" />
+            <img src="img/location.jpg"
+            alt="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург." />
           </a>
         </div>
 
         <div class="main-footer__background">
-            <a class="main-footer__logo">
-              <img src="img/logo-name.svg" alt="Лого Кэт Энерджи">
+          <div class="main-footer__logo">
+            <a href="index.html">
+              <img src="img/logo-name.svg" alt="Лого Кэт Энерджи" />
             </a>
-
+          </div>
 
           <div class="main-footer__social social">
             <ul class="reset-list social__list">
@@ -294,5 +293,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>
