@@ -5,3 +5,35 @@
   font-size: 14px;
   line-height: 18px;
 }
+
+.page__body-background {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .page__body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .page__body-background {
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to right, rgba(68, 167, 7, 0.85), rgba(68, 167, 7, 0.85)), url("../img/cat-main-background-desktop.jpg");
+    background-repeat: no-repeat;
+    right: 0;
+    width: 720px;
+    height: 694px;
+
+    & img {
+      position: absolute;
+      width: 552px;
+      height: 499px;
+      top: 141px;
+      right: 330px;
+    }
+  }
+}

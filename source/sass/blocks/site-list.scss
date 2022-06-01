@@ -4,10 +4,11 @@
 }
 
 @media (max-width: $mobile-width-only) {
+  //mobile-menu when open
   .site-list {
     display: block;
     position: absolute;
-    top: 65px;
+    top: 61px;
     right: 0;
     left: 0;
     width: 100%;
@@ -54,6 +55,14 @@
     display: flex;
     width: 440px;
     margin-top: 18px;
+
+    & a:hover {
+      opacity: 0.6;
+    }
+
+    & a:disabled {
+      opacity: 0.3;
+    }
   }
 
   .site-list__item--active {
@@ -77,5 +86,15 @@
     position: relative;
     font-size: 18px;
     line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list a {
+    color: $white;
+  }
+
+  .site-list__item--active::before {
+    background-color: $white;
   }
 }
