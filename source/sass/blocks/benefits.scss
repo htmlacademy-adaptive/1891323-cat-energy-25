@@ -142,14 +142,33 @@
     margin-left: 25px;
     width: 32px;
     height: 10px;
+
+    .benefits__catalog-link:hover & {
+      width: 52px;
+    }
+  }
+
+  .benefits__catalog-link {
+    max-width: 190px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .benefits {
+    padding-top: 250px;
+    margin: 0 auto;
+  }
+
   .benefits__wrapper {
     display: flex;
-    margin: 0 auto;
-    padding: 0 110px;
   }
 
   .benefits__card {
