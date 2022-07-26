@@ -147,6 +147,14 @@
 
   .main-nav__logo-second {
     display: block;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.4;
+    }
   }
 }
 
@@ -163,6 +171,14 @@
 
   .main-nav__logo-third {
     display: block;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.4;
+    }
   }
 
   .site-list {

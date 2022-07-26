@@ -40,6 +40,10 @@
       margin-right: 20px;
     }
   }
+
+  .faq__item-background {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -58,9 +62,9 @@
   .faq__items-list {
     display: grid;
     grid-template-columns: 249px 249px;
-    row-gap: 37px;
+    row-gap: 134px;
     column-gap: 153px;
-    margin-bottom: 47px;
+    margin-bottom: 104px;
 
     .faq__item img {
       width: 80px;
@@ -69,6 +73,23 @@
 
     .faq__item-description {
       margin-top: 31px;
+    }
+  }
+
+  .faq__item {
+    position: relative;
+  }
+
+  .faq__item-background {
+    position: absolute;
+    font-size: 280px;
+    line-height: 280px;
+    z-index: -1;
+    color: rgba(242, 242, 242, 1);
+
+    .faq__item & {
+      top: -320px;
+      right: 0;
     }
   }
 }
@@ -80,6 +101,7 @@
 
   .faq__items-list {
     display: flex;
+    column-gap: 123px;
   }
 
   .faq__title {

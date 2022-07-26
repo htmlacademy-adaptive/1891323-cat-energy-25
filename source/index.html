@@ -8,6 +8,10 @@
   </head>
 
   <body class="page__body">
+    <div class="page__body-background">
+      <img src="img/index-can.png" alt="">
+    </div>
+
     <header class="main-header">
       <nav class="main-nav main-nav--closed main-mav--nojs">
         <div class="main-nav__wrapper">
@@ -55,16 +59,16 @@
             <p class="promo__description">Занялся собой? Займись котом!</p>
           </div>
           <div class="promo__main">
-            <img
-              class="promo__main-can"
-              src="img/index-can-tablet 1.svg"
-              alt="Банка с кормом"
-            />
+            <img class="promo__main-can" src="img/index-can-mobile-1.png" alt="Банка с кормом"/>
           </div>
           <div class="promo__footer">
             <button class="btn main-btn">
               <span>ПОДОБРАТЬ ПРОГРАММУ</span>
             </button>
+          </div>
+
+          <div class="promo__footer-background">
+            <img src="img/index-can-tablet-1.png" alt="Фон Банка с кормом">
           </div>
         </div>
       </section>
@@ -129,6 +133,7 @@
                 Функциональное питание содержит только полезные питательные
                 вещества.
               </p>
+              <p class="faq__item-background">1</p>
             </li>
             <li class="faq__item">
               <img src="img/faq_green-square-2.svg" alt="Иллюстрация функции" />
@@ -136,6 +141,7 @@
                 Выпускается в виде порошка, который нужно лишь залить кипятком и
                 готово.
               </p>
+              <p class="faq__item-background">2</p>
             </li>
             <li class="faq__item">
               <img src="img/faq_green-square-3.svg" alt="Иллюстрация функции" />
@@ -143,6 +149,7 @@
                 Замените один-два приема обычной еды на наше функциональное
                 питание.
               </p>
+              <p class="faq__item-background">3</p>
             </li>
             <li class="faq__item">
               <img src="img/faq_green-square-4.svg" alt="Иллюстрация функции" />
@@ -150,6 +157,7 @@
                 Уже через месяц наслаждайтесь изменениями к лучшему вашего
                 питомца!
               </p>
+              <p class="faq__item-background">4</p>
             </li>
           </ul>
         </div>
@@ -164,27 +172,21 @@
               <p class="example__description">
                 Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
                 на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
-                При этом он не менял своих привычек и<br> по-прежнему спит по 16 часов
+                При этом он не менял своих привычек и по-прежнему спит по 16 часов
                 в день.
               </p>
             </div>
 
             <div class="example__main">
-              <!--Example frame-element__first-->
-              <div class="example__results example__results-first">
-                <img src="img/weight_back-frame.svg" alt="Рамка" />
-
-                <div class="example-frame">
+              <div class="example__results-wrapper">
+                <!--Example frame-element__first-->
+                <div class="example__results example__results-first">
                   <h3 class="example-frame__title">5 КГ</h3>
                   <p class="example-frame__description">снижение веса</p>
                 </div>
-              </div>
 
-              <!--Example frame-element__second-->
-              <div class="example__results example__results-second">
-                <img src="img/weight_back-frame.svg" alt="Рамка" />
-
-                <div class="example-frame">
+                <!--Example frame-element__second -->
+                <div class="example__results example__results-second">
                   <h3 class="example-frame__title">60 ДНЕЙ</h3>
                   <p class="example-frame__description">затрачено времени</p>
                 </div>
@@ -197,21 +199,22 @@
             </div>
 
             <div class="example__footer">
-              <div class="example__slider">
-                <img
-                  class="slider__image slider-image__first"
-                  src="img/slider-before.png"
-                  alt="Иллюстрация трасформации кота"
-                />
-                <img
-                  class="slider__image slider-image__second"
-                  class="visually-hidden"
-                  src="img/slider-after.png"
-                  alt="Иллюстрация трасформации кота"
-                />
-                БЫЛО СТАЛО
-              </div>
-          </div>
+                <div class="example__slider">
+                  <!-- Slider prototype mobile version -->
+                  <img class="example__slider-first" src="img/Slider-prototype.png" alt="Пример было\стало">
+
+                  <!-- Slider prototype tablet version -->
+                  <div class="example__slider-container">
+                    <img class="example__slider-second" src="img/slider-prototype-second.png" alt="Пример было\стало">
+
+                    <div class="slidecontainer">
+                      <span>БЫЛО</span>
+                        <input type="range" min="1" max="99" value="50" class="slider" id="myRange">
+                      <span>СТАЛО</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
         </div>
       </section>
     </main>
